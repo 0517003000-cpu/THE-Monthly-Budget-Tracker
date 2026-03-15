@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monthly Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 contenteditable="true">Monthly Budget Tracker</h1>
+
+<div class="top">
+
+<label>Name:</label>
+<span contenteditable="true"></span>
+
+<label>Monthly Income:</label>
+<span contenteditable="true"></span>
+
+</div>
+
+
+<div class="monthManager">
+
+<button onclick="newMonth()">+ New Month</button>
+
+<div id="months"></div>
+
+</div>
+
+
+<div class="calculator">
+
+<a href="https://0517003000-cpu.github.io/Monthly-Budget-Calc/" target="_blank">
+Open Budget Calculator
+</a>
+
+</div>
+
+
+<div class="tables">
+
+<table class="budget">
+
+<tr>
+<th colspan="2">Essential Expenses</th>
+</tr>
+
+<tr>
+<td>Available Income</td>
+<td contenteditable="true" id="essentialBudget"></td>
+</tr>
+
+<tr><td contenteditable="true"></td><td contenteditable="true" class="essential"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="essential"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="essential"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="essential"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="essential"></td></tr>
+
+<tr>
+<td>Total Spending</td>
+<td id="essentialTotal">0</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td id="essentialStatus">-</td>
+</tr>
+
+</table>
+
+
+
+<table class="budget">
+
+<tr>
+<th colspan="2">Non Essential Expenses</th>
+</tr>
+
+<tr>
+<td>Available Income</td>
+<td contenteditable="true" id="nonBudget"></td>
+</tr>
+
+<tr><td contenteditable="true"></td><td contenteditable="true" class="non"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="non"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="non"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="non"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="non"></td></tr>
+
+<tr>
+<td>Total Spending</td>
+<td id="nonTotal">0</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td id="nonStatus">-</td>
+</tr>
+
+</table>
+
+
+
+<table class="budget">
+
+<tr>
+<th colspan="2">Savings</th>
+</tr>
+
+<tr>
+<td>Available Income</td>
+<td contenteditable="true" id="saveBudget"></td>
+</tr>
+
+<tr><td contenteditable="true"></td><td contenteditable="true" class="save"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="save"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="save"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="save"></td></tr>
+<tr><td contenteditable="true"></td><td contenteditable="true" class="save"></td></tr>
+
+<tr>
+<td>Total Spending</td>
+<td id="saveTotal">0</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td id="saveStatus">-</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="adviceBox">
+
+<h2>Budget Advice</h2>
+
+<p id="adviceMessage">
+Your financial advice will appear here.
+</p>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
