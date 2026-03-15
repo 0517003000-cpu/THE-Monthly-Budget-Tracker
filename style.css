@@ -1,0 +1,68 @@
+body{
+font-family:Arial;
+background:#f5f5f5;
+padding:30px;
+}
+
+h1{
+text-align:center;
+}
+
+.top{
+display:flex;
+gap:20px;
+justify-content:center;
+margin-bottom:20px;
+}
+
+span[contenteditable]{
+border-bottom:1px solid black;
+min-width:100px;
+display:inline-block;
+}
+
+.monthManager{
+text-align:center;
+margin-bottom:20px;
+}
+
+.monthManager button{
+margin:5px;
+padding:6px 12px;
+}
+
+.calculator{
+text-align:center;
+margin-bottom:30px;
+}
+
+.tables{
+display:flex;
+justify-content:space-between;
+gap:20px;
+}
+
+.budget{
+background:white;
+border-collapse:collapse;
+width:32%;
+}
+
+.budget th{
+background:black;
+color:white;
+padding:8px;
+}
+
+.budget td{
+border:1px solid black;
+padding:6px;
+min-height:25px;
+}
+
+.adviceBox{
+margin-top:40px;
+background:white;
+border:2px solid black;
+padding:20px;
+}
